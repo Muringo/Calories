@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+    <!-- Customize your theme here. -->
+<!--    <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--    <item name="colorAccent">@color/colorAccent</item>-->
+
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+
+    </style>
+
+
+    <!--for Normal FAB-->
+    <style name="customNormalFAB">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">14dp</item>
+        <item name="cornerSizeBottomRight">14dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="myCustomThemeForNormalFab" parent="">
+        <item name="colorSecondary">@android:color/holo_blue_dark</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/myCustomThemeForNormalFab</item>
+        <item name="shapeAppearanceOverlay">@style/customNormalFAB</item>
+
+    </style>
+
+</resources>
